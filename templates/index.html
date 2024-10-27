@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hash SHA-256</title>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <h2 class="title">Введіть повідомлення для шифрування</h2>
+            <input type="text" placeholder="введіть будь-який текст" class="msg">
+            <button class="submit">Захешувати</button>
+            <h2 class="hash-msg">Ваше захешоване повідомлення:</h2>
+            <div id="hash"></div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
